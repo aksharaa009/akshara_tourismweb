@@ -1,0 +1,51 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-color: #FBF9F8;
+}
+.container-fluid 
+{
+    min-height: 96.6%;
+}
+.cus-footer
+{
+    background-color: black;
+}
+footer p{
+text-align: center;
+color: white;
+margin-bottom:0px !important;
+}
+.cus-btn{
+    margin-right: 5px !important;
+}
+/* login/signup page begins */
+.cus-card{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%; 
+}
+.cus-card .card-body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.cus-card .card-link{
+    color:white;
+}
+.cus-card .card-link:hover{
+    color: turquoise;
+   
+}
+.cus-btn-login{
+    color: #F3EFED;
+    border-color: #F3EFED;
+}
+
+
+
+

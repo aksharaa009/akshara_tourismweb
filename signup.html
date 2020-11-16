@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kerala tourism</title>
+  </head>
+<body>
+    
+  <div class="container-fluid "> 
+    <div class="card bg-dark text-white cus-card" style="margin-top:0% !important;">
+      <img src="./images/login-bg.png" height="800px" class="card-img" alt="...">
+      <div class="card-img-overlay">
+      <div class="card-header text-center">
+        Signup
+      </div>
+      <div class="card-body">
+        <form action="#" onsubmit="return validateSignUpForm()" >
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Email</label>
+              <input  class="form-control col-md-8" id="txtEmail" name="txtEmail"  onblur="IsValidEmail();"
+            onfocus="ClearErrorMessage(this);"  placeholder="Enter Email address"  required>
+              <span id="spnEmailErrorMessage"></span>
+            </div>
+            <div class="form-group col-md-12">
+              <label for="inputPassword4">Password</label>
+              <input type="text" class="form-control col-md-8" id="inputPassword4" required
+               name="inputPassword4" placeholder="Enter password" onkeyup="CheckPasswordStrength();"
+                 onfocus="ClearErrorMessage(this);"  onblur="IsValidPassword();"  >
+              <span id="spnPasswordErrorMessage"></span>
+              <div id="progressBar" class="progress col-md-8" style="padding-left: 0%;padding-right: 0%;margin-top: 1%;display: none;">
+               
+              </div>
+              <br>
+              <label for="reinputPassword4">Retype Password</label>
+              <input type="password" class="form-control col-md-8" id="reinputPassword4" name="reinputPassword4"
+              onblur="ComparePassword();"  onfocus="ClearErrorMessage(this);"  placeholder="Reenter password"  required>
+              <span id="spnCnfmPasswordErrorMessage"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address </label>
+            <textarea type="text" class="form-control col-md-8" required id="inputAddress2" placeholder="Apartment, studio, or floor"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="number">Phone number</label>
+              <input type="text" class="form-control col-md-8" id="inputphone" name="inputphone"
+               placeholder="Phone number"  onfocus="ClearErrorMessage(this);"  onblur="IsValidPhNo();" required>
+               <span id="spnPhNoErrorMessage"></span>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose</option>
+                <option>Kerala</option>
+                <option>Tamilnadu</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <center>
+          <button type="submit" class="btn btn-outline-info cus-btn-login">Sign in</button>
+        </center>
+        </form>
+      </div>
+      <div class="card-footer text-center" style="background-image: url('./images/login-bg.png');">
+        <a href="/index.html" class="card-link">Back To Home</a>
+        <a href="/login.html" class="card-link">Already a member?</a>
+        <div>
+       
+
+      </div>
+      </div>
+    </div>
+    </div>
+  
+  </div> 
+ 
+  <div class="clearfix">&nbsp;
+  </div>
+  <!-- FOOTER -->
+  <footer class="cus-footer">
+    <p style="text-align: center;">&copy; 2020-2021 Demo Company, Inc.</p>
+  </footer>
+
+    <!-- SCript Files Begin--> 
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="form.js"></script> 
+  
+   
+</body>
+</html>
